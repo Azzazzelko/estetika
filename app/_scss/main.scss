@@ -1,0 +1,14 @@
+@import "compass";
+
+/* ======= mixins ========= */
+    
+@import "_common/_mixins.scss";
+
+/* ===== instruments ====== */
+
+@import "_instruments/_vars.scss";
+@import "_instruments/_general.scss";
+
+/* ======= sections ====== */ 
+
+@import "pages/**/*.scss";

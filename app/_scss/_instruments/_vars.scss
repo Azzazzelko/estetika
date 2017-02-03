@@ -1,0 +1,25 @@
+%icons { 		
+	position: absolute;
+	display: block;
+	content: "";
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+%pseudo {
+	position: absolute;
+	display: block;
+	content: "";
+}
+
+%center {
+	position: absolute;
+	display: block;
+	content: "";
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%); 
+}
+
+// @include get-sprite($cabinet-spr, arrow);
+//$header-spr : sprite-map('icons-header/*.png' , $spacing: 70px);
