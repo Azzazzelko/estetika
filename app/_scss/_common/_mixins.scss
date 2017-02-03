@@ -27,3 +27,12 @@
 		font-family: 'proximanova-light';
 	}
 }
+
+@mixin linksHover() {
+	transition: all .3s ease-in-out;
+	opacity: 1;
+
+	&:hover {
+		opacity: 0.6;
+	}
+}
