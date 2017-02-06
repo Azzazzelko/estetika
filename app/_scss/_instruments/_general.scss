@@ -29,7 +29,7 @@ html, body {
 
 body {
 	display: table;
-	font-family: 'proximanova-regular'; 
+	@include font(reg);
 }
 
 .img-responsive {

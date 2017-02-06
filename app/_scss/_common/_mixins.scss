@@ -16,15 +16,19 @@
 
 @mixin font($font) {
 	@if $font == reg {
-		font-family: 'proximanova-regular';
+		font-family: 'BlissPro-Regular';
 	} @elseif $font == ext {
-		font-family: 'proximanova-extrabold';
+		font-family: 'BlissPro-ExtraBold';
 	} @elseif $font == bold {
-		font-family: 'proximanova-bold';
+		font-family: 'BlissPro-Bold';
 	} @elseif $font == ital {
-		font-family: 'proximanova-regularitalic';
+		font-family: 'BlissPro-Italic';
 	} @elseif $font == light {
-		font-family: 'proximanova-light';
+		font-family: 'BlissPro-Light';
+	} @elseif $font == med {
+		font-family: 'BlissPro-Medium';
+	} @elseif $font == heavy {
+		font-family: 'BlissPro-Heavy';
 	}
 }
 

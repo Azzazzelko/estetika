@@ -21,7 +21,7 @@
 	<main class="main">
 		<section class="general-block">
 			<div class="container">
-				<header class="header">
+				<header class="header-in">
 					<div class="header-top clearfix">
 						<div class="logo pull-left">
 							<h1 class="logo-text">Estetika</h1>
@@ -30,7 +30,7 @@
 							</div>
 						</div>
 						<div class="header-top__info pull-right text-right">
-							<a href="#" class="header-top__info-link">Заказать звонок</a>
+							<a href=".feedback-pop-up" class="header-top__info-link" data-toggle="modal">Заказать звонок</a>
 							<a href="#" class="header-top__info-tel">+7 (4212) 45-66-99</a>
 						</div>
 					</div>
@@ -63,7 +63,7 @@
 					</div>
 				</header>
 				<div class="row">
-					<div class="general-block__center col-sm-8">
+					<div class="general-block__center col-sm-8 col-lg-7">
 						<div class="general-block__title">
 							Современная стоматологическая помощь для взрослых и детей
 						</div>
@@ -84,7 +84,7 @@
 				</div>
 				<ul class="cabinet-block__list row">
 					<li class="cabinet-block__item col-sm-6">
-						<a href="#" class="cabinet-block__link">
+						<a href=".gallery-pop-up" class="cabinet-block__link" data-toggle="modal">
 							<div class="cabinet-block__img-container img-container">
 								<img src="images/cabinet-1.png" alt="img" class="img-responsive cabinet-block__img">
 							</div>
@@ -298,10 +298,10 @@
 					<div>
 						<div class="row clearfix">
 							<div class="owl-main-slider__title col-sm-12">ЭКОНОМЬТЕ НА ЛЕЧЕНИИ</div>
-							<div class="owl-main-slider__description col-sm-8">
+							<div class="owl-main-slider__description col-sm-8 col-lg-7">
 								В центре челюстно-лицевой хирургии и эстетики Вы можете использовать материнский капитал, а после лечения оформить налоговый вычет.
 							</div>
-							<div class="owl-main-slider__img-container img-container col-sm-3 col-sm-offset-1">
+							<div class="owl-main-slider__img-container img-container col-sm-3 col-sm-offset-1 col-lg-offset-2">
 								<img src="images/slider-rub.svg" alt="img" class="img-responsive owl-main-slider__img">
 							</div>
 						</div>
@@ -309,10 +309,10 @@
 					<div>
 						<div class="row clearfix">
 							<div class="owl-main-slider__title col-sm-12">ЭКОНОМЬТЕ НА ЛЕЧЕНИИ</div>
-							<div class="owl-main-slider__description col-sm-8">
+							<div class="owl-main-slider__description col-sm-8 col-lg-7">
 								В центре челюстно-лицевой хирургии и эстетики Вы можете использовать материнский капитал, а после лечения оформить налоговый вычет.
 							</div>
-							<div class="owl-main-slider__img-container img-container col-sm-3 col-sm-offset-1">
+							<div class="owl-main-slider__img-container img-container col-sm-3 col-sm-offset-1 col-lg-offset-2">
 								<img src="images/slider-rub.svg" alt="img" class="img-responsive owl-main-slider__img">
 							</div>
 						</div>
@@ -320,10 +320,10 @@
 					<div>
 						<div class="row clearfix">
 							<div class="owl-main-slider__title col-sm-12">ЭКОНОМЬТЕ НА ЛЕЧЕНИИ</div>
-							<div class="owl-main-slider__description col-sm-8">
+							<div class="owl-main-slider__description col-sm-8 col-lg-7">
 								В центре челюстно-лицевой хирургии и эстетики Вы можете использовать материнский капитал, а после лечения оформить налоговый вычет.
 							</div>
-							<div class="owl-main-slider__img-container img-container col-sm-3 col-sm-offset-1">
+							<div class="owl-main-slider__img-container img-container col-sm-3 col-sm-offset-1 col-lg-offset-2">
 								<img src="images/slider-rub.svg" alt="img" class="img-responsive owl-main-slider__img">
 							</div>
 						</div>
@@ -355,9 +355,175 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="feedback-block">
+			<div class="container">
+				<div class="row">
+					<div class="feedback-block__title col-sm-7 col-lg-6">
+						Не откладывайте заботу о своем здоровье. Запишитесь на прием уже сейчас!
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-5">
+						<form action="#" class="feedback-block__form">
+							<div class="form-group-material">
+								<label class="material-label" for="name">Имя</label>
+								<input class="material-field" id="name" type="text" name="name">
+								<small class="error">Обязательное поле!</small>
+							</div>
+							<div class="form-group-material">
+								<label class="material-label" for="tel">Телефон*</label>
+								<input class="material-field" id="tel" type="text" name="tel">
+								<small class="error">Обязательное поле!</small>
+							</div>
+							<div class="form-group-material">
+								<label class="material-label" for="problem">Ваша проблема</label>
+								<input class="material-field" id="problem" type="text" name="problem">
+								<small class="error">Обязательное поле!</small>
+							</div>
+							<button type="submit" class="btn_default_trans feedback-block__btn-submit">записаться на прием</button>
+						</form>
+					</div>
+				</div>
+				<div class="feedback-block__img-container img-container">
+					<img src="images/feedback-img.png" alt="img" class="img-responsive feedback-block__img">
+				</div>
+			</div>
+		</section>
+
+		<div class="modal fade feedback-pop-up">
+			<div class="feedback-pop-up__dialog">
+				<div class="feedback-pop__container">
+					<a href="#" class="feedback-pop__close-button" data-dismiss="modal"></a>
+					<div class="feedback-pop__title">Заказать обратный звонок</div>
+					<form action="#" class="feedback-pop__form">
+						<div class="form-group-material">
+							<label class="material-label" for="feedback-pop-up__name">Имя</label>
+							<input class="material-field" id="feedback-pop-up__name" type="text" name="name">
+							<small class="error">Обязательное поле!</small>
+						</div>
+						<div class="form-group-material">
+							<label class="material-label" for="feedback-pop-up__tel">Телефон*</label>
+							<input class="material-field" id="feedback-pop-up__tel" type="text" name="tel">
+							<small class="error">Обязательное поле!</small>
+						</div>
+						<div class="form-group-material">
+							<label class="material-label" for="feedback-pop-up__how">Как вы узнали о нас?</label>
+							<input class="material-field" id="feedback-pop-up__how" type="text" name="how">
+							<small class="error">Обязательное поле!</small>
+						</div>
+						<button type="submit" class="btn_default_trans feedback-pop__btn-submit">отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade gallery-pop-up">
+			<div class="gallery-pop-up__dialog container">
+				<div class="gallery-pop__container">
+					<a href="#" class="feedback-pop__close-button" data-dismiss="modal"></a>
+					<div class="owl-carousel owl-gallery-slider">
+						<div>
+							<div class="owl-gallery-img-container img-container">
+								<img src="images/bg-general.png" alt="img" class="owl-gallery-img">
+							</div>
+						</div>
+						<div>
+							<div class="owl-gallery-img-container img-container">
+								<img src="images/bg-general.png" alt="img" class="owl-gallery-img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 
 	<footer class="footer">
+		<div class="footer-top">
+			<div class="container clearfix">
+				<ul class="footer__socials-list pull-left">
+					<li class="footer__socials-item">
+						<a href="#" class="footer__socials-link fb">fb</a>
+					</li>
+					<li class="footer__socials-item">
+						<a href="#" class="footer__socials-link vk">vk</a>
+					</li>
+					<li class="footer__socials-item">
+						<a href="#" class="footer__socials-link ok">ok</a>
+					</li>
+					<li class="footer__socials-item">
+						<a href="#" class="footer__socials-link inst">inst</a>
+					</li>
+					<li class="footer__socials-item">
+						<a href="#" class="footer__socials-link google">g+</a>
+					</li>
+					<li class="footer__socials-item">
+						<a href="#" class="footer__socials-link tw">tw</a>
+					</li>
+				</ul>
+				<div class="footer-top__info pull-right text-right">
+					<a href=".feedback-pop-up" class="footer-top__info-link" data-toggle="modal">Заказать звонок</a>
+					<a href="#" class="footer-top__info-tel">+7 (4212) 45-66-99</a>
+				</div>
+				<div class="footer-top__adress pull-right">
+					<p>
+						Хабаровск
+					</p>
+					<p>
+						ул. Морозова ПЛ 89, оф 1
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="footer__nav-list">
+							<li class="footer__nav-item">
+								<a href="#" class="footer__nav-link">Лицензии и сертификаты</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="#" class="footer__nav-link">Органы РФ по надзору</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="#" class="footer__nav-link">ОМС</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="#" class="footer__nav-link">Права и обязанности граждан</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="#" class="footer__nav-link">Правила диагностики</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="#" class="footer__nav-link">Правила и сроки госпитализации</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="#" class="footer__nav-link">Открытые вакансии</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="#" class="footer__nav-link">Лекарственные препараты</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="#" class="footer__nav-link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container clearfix">
+				<div class="footer-bottom__copy pull-left">
+					© 2014-2016 Esteticadent
+				</div>
+				<div class="footer-bottom__made-by pull-right">
+					<span class="footer-bottom__made-by-text">Сделано в</span>
+					<a href="#" class="footer-bottom__made-by-link">Skydental</a>
+				</div>
+			</div>
+		</div>
 	</footer>
 
 	<script src="js/jquery-1.11.0.min.js"></script>
