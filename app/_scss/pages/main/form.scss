@@ -29,10 +29,11 @@ input.material-field, textarea.material-field {
 
 textarea.material-field {
 	resize: none;
-	// overflow: hidden;
+	overflow: hidden;
+	height: auto;
+	padding-top: 15px;
+	line-height: normal;
 }
-
-
 
 
 .form-group-material {
@@ -131,6 +132,7 @@ small.error {
 
 .has-value .material-label {
 	transform: translateY(-220%) scale(0.82);
+	top: 30px;
 }
 
 

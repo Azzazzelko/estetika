@@ -19,6 +19,15 @@ $(function() {
 		});
 	});
 
+	$('.owl-article-slider').owlCarousel({
+		stagePadding: 500,
+		loop:true,
+		margin:30,
+		nav:true,
+		items: 2,
+		dots:false
+	})
+
 	/***** forms ****/
 
 	var materialForm = function() {
@@ -35,11 +44,5 @@ $(function() {
 	};
 
 	materialForm();
-
-	// $('textarea').on("keyup", function(e){
-	// 	this.style.height = "1px";
-	// 	this.style.height = (5+this.scrollHeight)+"px";
-	// 	this.scrollHeight > 60 ? this.style.overflow = "auto" : this.style.overflow = "hidden";
-	// });
 
 }());
