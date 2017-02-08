@@ -11,7 +11,7 @@
 	height: 50px;
 	border-radius: 100px;
 	background-color: #33b4b0;
-	padding: 16px 10px;
+	padding: 17px 10px;
 	text-transform: uppercase;
 	color: #fff;
 	text-align: center;
@@ -140,6 +140,12 @@
 	color: #fff;
 	text-transform: uppercase;
 	@include linksHover();
+	border-bottom: 2px solid transparent;
+
+	&:hover,
+	&.active {
+		border-bottom: 2px solid #fff;
+	}
 }
 
 .general-block .header-in {
@@ -233,6 +239,7 @@
 	@include font(bold);
 	padding-right: 45px;
 	margin-bottom: 20px;
+	line-height: normal;
 }
 
 .cabinet-block__item-item {
@@ -249,6 +256,7 @@
 
 	&:before {
 		@extend %pseudo;
+		border-radius: 50%;
 		width: 3px;
 		height: 3px;
 		left: 0;
@@ -444,6 +452,7 @@
 }
 
 .owl-main-slider__description {
+	line-height: normal;
 	font-size: 32px;
 	color: #ffffff;
 	@include font(heavy);
@@ -580,11 +589,14 @@
 	color: #000000;
 	font-size: 32px;
 	@include font(heavy);
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
-.feedback-block__btn-submit {
+.feedback-block__btn-submit,
+.feedback-block__btn-submit:hover,
+.feedback-block__btn-submit:focus {
 	margin-top: 20px;
+	width: 220px;
 }
 
 .feedback-block__img-container {

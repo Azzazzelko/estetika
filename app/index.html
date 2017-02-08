@@ -29,12 +29,68 @@
 								<img src="images/logo.svg" alt="img" class="img-responsive logo-img">
 							</div>
 						</div>
-						<div class="header-top__info pull-right text-right">
+						<div class="header-top__mobile-nav pull-right hidden_md hidden_lg dropdown">
+							<a href="#" class="header-top__nav-button" data-toggle="dropdown">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</a>
+							<div class="dropdown-menu mobile-nav__dropdown">
+								<a href="#" class="header-top__nav-button inner_button" data-toggle="dropdown">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</a> 
+								<ul class="mobile-nav-list">
+									<li class="mobile-nav-item">
+										<a href="#" class="mobile-nav-link">О Клинике</a>
+									</li>
+									<li class="mobile-nav-item">
+										<a href="#" class="mobile-nav-link">УСЛУГИ</a>
+									</li>
+									<li class="mobile-nav-item">
+										<a href="#" class="mobile-nav-link">Цены</a>
+									</li>
+									<li class="mobile-nav-item">
+										<a href="#" class="mobile-nav-link">ОТЗЫВЫ</a>
+									</li>
+									<li class="mobile-nav-item">
+										<a href="#" class="mobile-nav-link">Истории лечения</a>
+									</li>
+									<li class="mobile-nav-item">
+										<a href="#" class="mobile-nav-link">Врачи</a>
+									</li>
+									<li class="mobile-nav-item">
+										<a href="#" class="mobile-nav-link">Акции и скидки</a>
+									</li>
+									<li class="mobile-nav-item">
+										<a href="#" class="mobile-nav-link">Контакты</a>
+									</li>
+								</ul>
+								<ul class="mobile-nav-socials-list">
+									<li class="mobile-nav-socials-item">
+										<a href="#" class="mobile-nav-socials-link vk">vk</a>
+									</li>
+									<li class="mobile-nav-socials-item">
+										<a href="#" class="mobile-nav-socials-link fb">fb</a>
+									</li>
+									<li class="mobile-nav-socials-item">
+										<a href="#" class="mobile-nav-socials-link inst">inst</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header-top__info pull-right text-right hidden-xs">
+							<a href=".feedback-pop-up" class="header-top__info-link" data-toggle="modal">Заказать звонок</a>
+							<a href="#" class="header-top__info-tel">+7 (4212) 45-66-99</a>
+						</div>
+						<a href="#mobile-phone__collapse" class="mobile-phone visible-xs pull-right" data-toggle="collapse"></a>
+						<div class="collapse mobile-phone__collapse" id="mobile-phone__collapse">
 							<a href=".feedback-pop-up" class="header-top__info-link" data-toggle="modal">Заказать звонок</a>
 							<a href="#" class="header-top__info-tel">+7 (4212) 45-66-99</a>
 						</div>
 					</div>
-					<div class="header-bottom">
+					<div class="header-bottom hidden-sm hidden-xs">
 						<nav class="nav">
 							<ul class="nav-list">
 								<li class="nav-item">
@@ -63,11 +119,11 @@
 					</div>
 				</header>
 				<div class="row">
-					<div class="general-block__center col-sm-8 col-lg-7">
+					<div class="general-block__center col-sm-11 col-md-8 col-lg-7">
 						<div class="general-block__title">
 							Современная стоматологическая помощь для взрослых и детей
 						</div>
-						<a href="#" class="general-block__link btn_default">Записаться на прием</a>
+						<a href=".enroll-pop-up" data-toggle="modal" class="general-block__link btn_default">Записаться на прием</a>
 					</div>
 				</div>
 				<a href="#" class="general-block__bottom-arrow"></a>
@@ -106,7 +162,7 @@
 					</li>
 					<li class="cabinet-block__item col-sm-6 cabinet-block__item_last-block">
 						<div class="cabinet-block__item-title">
-							Научно-клинический центр эстетическойстоматологии Estetica — это:
+							Научно-клинический центр эстетической стоматологии Estetica — это:
 						</div>
 						<ul class="cabinet-block__item-list">
 							<li class="cabinet-block__item-item">
@@ -134,7 +190,7 @@
 			<div class="container">
 				<div class="doctors-block__title">Врачи стоматологи</div>
 				<div class="row">
-					<div class="doctors-block__description col-sm-7">Среди наших ведущих сотрудников нет равнодушных, а когда вкладываешь в свое дело все силы и эмоции, то и результат всегда будет соответствующим</div>
+					<div class="doctors-block__description col-sm-12 col-md-7">Среди наших ведущих сотрудников нет равнодушных, а когда вкладываешь в свое дело все силы и эмоции, то и результат всегда будет соответствующим</div>
 				</div>
 				<ul class="doctors-block__list row">
 					<li class="doctors-block__item col-sm-4">
@@ -193,7 +249,7 @@
 			<div class="container">
 				<div class="prices-block__title">Услуги и цены</div>
 				<div class="row">
-					<div class="prices-block__description col-sm-8">
+					<div class="prices-block__description col-sm-12 col-md-8">
 						В научно-клиническом центре челюстно-лицевой хирургии и стоматологии Estetica действует максимально прозрачная ценовая программа. Мы уважаем себя и своих пациентов, поэтому у нас исключены скрытые доплаты и надбавки, а также прочие уловки, свидетельствующие о нечистоплотности руководства клиники. Кроме того, лечащий врач всегда охотно отвечает на все интересующие вопросы.
 					</div>
 				</div>
@@ -296,7 +352,7 @@
 			<div class="container">
 				<div class="owl-carousel owl-main-slider">
 					<div>
-						<div class="row clearfix">
+						<div class="row clearfix mobile_flex">
 							<div class="owl-main-slider__title col-sm-12">ЭКОНОМЬТЕ НА ЛЕЧЕНИИ</div>
 							<div class="owl-main-slider__description col-sm-8 col-lg-7">
 								В центре челюстно-лицевой хирургии и эстетики Вы можете использовать материнский капитал, а после лечения оформить налоговый вычет.
@@ -307,7 +363,7 @@
 						</div>
 					</div>
 					<div>
-						<div class="row clearfix">
+						<div class="row clearfix mobile_flex">
 							<div class="owl-main-slider__title col-sm-12">ЭКОНОМЬТЕ НА ЛЕЧЕНИИ</div>
 							<div class="owl-main-slider__description col-sm-8 col-lg-7">
 								В центре челюстно-лицевой хирургии и эстетики Вы можете использовать материнский капитал, а после лечения оформить налоговый вычет.
@@ -318,7 +374,7 @@
 						</div>
 					</div>
 					<div>
-						<div class="row clearfix">
+						<div class="row clearfix mobile_flex">
 							<div class="owl-main-slider__title col-sm-12">ЭКОНОМЬТЕ НА ЛЕЧЕНИИ</div>
 							<div class="owl-main-slider__description col-sm-8 col-lg-7">
 								В центре челюстно-лицевой хирургии и эстетики Вы можете использовать материнский капитал, а после лечения оформить налоговый вычет.
@@ -359,12 +415,12 @@
 		<section class="feedback-block">
 			<div class="container">
 				<div class="row">
-					<div class="feedback-block__title col-sm-7 col-lg-6">
+					<div class="feedback-block__title col-sm-9 col-md-7 col-lg-6">
 						Не откладывайте заботу о своем здоровье. Запишитесь на прием уже сейчас!
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-5">
+					<div class="col-sm-7 col-md-5">
 						<form action="#" class="feedback-block__form">
 							<div class="form-group-material">
 								<label class="material-label" for="name">Имя</label>
@@ -385,7 +441,7 @@
 						</form>
 					</div>
 				</div>
-				<div class="feedback-block__img-container img-container">
+				<div class="feedback-block__img-container img-container hidden-xs">
 					<img src="images/feedback-img.png" alt="img" class="img-responsive feedback-block__img">
 				</div>
 			</div>
@@ -434,6 +490,33 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade enroll-pop-up">
+			<div class="feedback-pop-up__dialog">
+				<div class="feedback-pop__container">
+					<a href="#" class="feedback-pop__close-button" data-dismiss="modal"></a>
+					<div class="feedback-pop__title">Записаться на прием</div>
+					<form action="#" class="enroll-pop__form">
+						<div class="form-group-material">
+							<label class="material-label" for="enroll-pop-up__name">Имя</label>
+							<input class="material-field" id="enroll-pop-up__name" type="text" name="name">
+							<small class="error">Обязательное поле!</small>
+						</div>
+						<div class="form-group-material">
+							<label class="material-label" for="enroll-pop-up__tel">Телефон*</label>
+							<input class="material-field" id="enroll-pop-up__tel" type="text" name="tel">
+							<small class="error">Обязательное поле!</small>
+						</div>
+						<div class="form-group-material">
+							<label class="material-label" for="enroll-pop-up__how">Как вы узнали о нас?</label>
+							<input class="material-field" id="enroll-pop-up__how" name="how" type="text"></input>
+							<small class="error">Обязательное поле!</small>
+						</div>
+						<button type="submit" class="btn_default_trans feedback-pop__btn-submit">отправить</button>
+					</form>
 				</div>
 			</div>
 		</div>

@@ -2,31 +2,32 @@ $(function() {
 
 	$('.owl-main-slider').owlCarousel({
 		loop:true,
-		margin:0,
+		margin:50,
 		items:1,
 		nav:true,
-		dots:true
+		dots:true,
+		singleItem : true
 	});
 
-	$('.gallery-pop-up').on("show.bs.modal", function(e){
+	// $('.gallery-pop-up').on("show.bs.modal", function(e){
 
-		$('.owl-gallery-slider').owlCarousel({
-			loop:true,
-			margin:0,
-			items:1,
-			nav:true,
-			dots:true
-		});
-	});
+	// 	$('.owl-gallery-slider').owlCarousel({
+	// 		loop:true,
+	// 		margin:0,
+	// 		items:1,
+	// 		nav:true,
+	// 		dots:true
+	// 	});
+	// });
 
-	$('.owl-article-slider').owlCarousel({
-		stagePadding: 500,
-		loop:true,
-		margin:30,
-		nav:true,
-		items: 2,
-		dots:false
-	})
+	// $('.owl-article-slider').owlCarousel({
+	// 	stagePadding: 500,
+	// 	loop:true,
+	// 	margin:30,
+	// 	nav:true,
+	// 	items: 2,
+	// 	dots:false
+	// })
 
 	/***** forms ****/
 

@@ -29,6 +29,7 @@ html, body {
 
 body {
 	display: table;
+	line-height: normal;
 	@include font(reg);
 }
 
