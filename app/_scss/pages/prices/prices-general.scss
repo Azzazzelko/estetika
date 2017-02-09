@@ -1,0 +1,64 @@
+/****************
+** prices-page *
+****************/
+
+.prices-page {
+	padding-bottom: 70px;
+}
+
+.prices-page__title {
+    font-family: 'BlissPro-ExtraBold';
+    font-size: 48px;
+    color: #131313;
+    line-height: 1.21;
+    margin-bottom: 35px;
+}
+
+.prices-page__item {
+	margin-bottom: 50px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.prices-page__item-title {
+	font-size: 20px;
+	line-height: 15px;
+	@include font(bold);
+	color: #33b4b0;
+	margin-bottom: 15px;
+}
+
+.prices-page__item-item {
+	padding: 10px 0;
+	border-bottom: 1px solid #d8d8d8;
+	margin-bottom: 10px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.prices-page__item-item-name {
+	font-size: 16px;
+	line-height: 24px;
+	color: black;
+	float: left;
+}
+
+.prices-page__item-item-price {
+	@include font(ext);
+	float: right;
+	color: black;
+	line-height: 24px;
+	font-size: 14px;
+	text-align: right;
+	margin-left: 30px;
+}
+
+.enroll-block__btn,
+.enroll-block__btn:hover,
+.enroll-block__btn:focus {
+	width: 220px;
+}
