@@ -658,6 +658,7 @@
 .footer__socials-link {
 	height: 100%;
 	width: 100%;
+	@include linksHover();
 
 	&.fb {
 		background: image-url('foot-facebook.svg') no-repeat 50% 50%;

@@ -1322,6 +1322,11 @@ input.material-field:focus, textarea.material-field:focus {
 .footer__socials-link {
   height: 100%;
   width: 100%;
+  transition: all .3s ease-in-out;
+  opacity: 1;
+}
+.footer__socials-link:hover {
+  opacity: 0.6;
 }
 .footer__socials-link.fb {
   background: url('../images/foot-facebook.svg?1486630787') no-repeat 50% 50%;
@@ -1809,6 +1814,10 @@ input.material-field:focus, textarea.material-field:focus {
 }
 /* sm */
 @media screen and (max-width: 767px) {
+  .gallery-pop-up__dialog {
+    width: 100%;
+  }
+
   .gallery-pop__container {
     max-width: 100%;
   }
