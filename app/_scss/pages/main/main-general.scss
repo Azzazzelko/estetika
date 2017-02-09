@@ -216,6 +216,27 @@
 	height: 100%;
 	margin-left: -15px;
 	margin-right: -15px;
+
+	&:before {
+		display: block;
+		width: 60px;
+		height: 60px;
+		background: image-url('zoom.svg') no-repeat 50% 50%;
+		background-size: cover;
+		position: absolute;
+		content: "";
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
+	}
 }
 
 .cabinet-block__img-container {
@@ -637,6 +658,36 @@
 .footer__socials-link {
 	height: 100%;
 	width: 100%;
+
+	&.fb {
+		background: image-url('foot-facebook.svg') no-repeat 50% 50%;
+		background-size: 20px;
+	}
+
+	&.vk {
+		background: image-url('foot-vk.svg') no-repeat 50% 50%;
+		background-size: 20px;
+	}
+
+	&.ok {
+		background: image-url('foot-odnoklassniki.svg') no-repeat 50% 50%;
+		background-size: 20px;
+	}
+
+	&.inst {
+		background: image-url('foot-instagram.svg') no-repeat 50% 50%;
+		background-size: 20px;
+	}
+
+	&.google {
+		background: image-url('foot-google-plus.svg') no-repeat 50% 50%;
+		background-size: 20px;
+	}
+
+	&.tw {
+		background: image-url('foot-twitter.svg') no-repeat 50% 50%;
+		background-size: 20px;
+	}
 }
 
 .footer-top__adress {
@@ -810,7 +861,49 @@
 }
 
 .gallery-pop__container {
-		
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.owl-gallery-slider .owl-prev, .owl-gallery-slider .owl-next {
+	position: absolute;
+	font-size: 0;
+	color: transparent;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #fff;
+	top: 50%;
+	border-top: none;
+	border-right: none;
+	@include linksHover();
+}
+
+.owl-gallery-slider .owl-prev {
+	transform: translateY(-50%) rotate(45deg);
+	left: -75px;
+}
+
+.owl-gallery-slider .owl-next {
+	transform: translateY(-50%) rotate(-135deg);
+	right: -75px;
+}
+
+.gallery-pop-up__close-button {
+	position: absolute;
+	top: -65px;
+	right: 45px;
+	background: image-url("gallery-close.svg") no-repeat;
+	width: 40px;
+	background-size: cover;
+	height: 40px;
+	@include linksHover();
+}
+
+.owl-gallery-sliders-count {
+	color: #fff;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 23px;
 }
 
 /****************************/
