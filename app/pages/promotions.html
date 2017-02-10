@@ -27,13 +27,65 @@
 						<img src="../images/logo.svg" alt="img" class="img-responsive logo-img">
 					</div>
 				</a>
-				<div class="header-top__info pull-right text-right">
+				<div class="header-top__mobile-nav pull-right hidden_md hidden_lg dropdown">
+					<a href="#" class="header-top__nav-button" data-toggle="dropdown">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<div class="dropdown-menu mobile-nav__dropdown">
+						<a href="#" class="header-top__nav-button inner_button" data-toggle="dropdown">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</a> 
+						<ul class="mobile-nav-list">
+							<li class="mobile-nav-item">
+								<a href="#" class="mobile-nav-link">О Клинике</a>
+							</li>
+							<li class="mobile-nav-item">
+								<a href="#" class="mobile-nav-link">УСЛУГИ</a>
+							</li>
+							<li class="mobile-nav-item">
+								<a href="#" class="mobile-nav-link">Цены</a>
+							</li>
+							<li class="mobile-nav-item">
+								<a href="#" class="mobile-nav-link">ОТЗЫВЫ</a>
+							</li>
+							<li class="mobile-nav-item">
+								<a href="#" class="mobile-nav-link">Истории лечения</a>
+							</li>
+							<li class="mobile-nav-item">
+								<a href="#" class="mobile-nav-link">Врачи</a>
+							</li>
+							<li class="mobile-nav-item">
+								<a href="#" class="mobile-nav-link">Акции и скидки</a>
+							</li>
+							<li class="mobile-nav-item">
+								<a href="#" class="mobile-nav-link">Контакты</a>
+							</li>
+						</ul>
+						<ul class="mobile-nav-socials-list">
+							<li class="mobile-nav-socials-item">
+								<a href="#" class="mobile-nav-socials-link vk">vk</a>
+							</li>
+							<li class="mobile-nav-socials-item">
+								<a href="#" class="mobile-nav-socials-link fb">fb</a>
+							</li>
+							<li class="mobile-nav-socials-item">
+								<a href="#" class="mobile-nav-socials-link inst">inst</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-top__info pull-right text-right hidden-xs">
 					<a href=".feedback-pop-up" class="header-top__info-link" data-toggle="modal">Заказать звонок</a>
 					<a href="#" class="header-top__info-tel">+7 (4212) 45-66-99</a>
 				</div>
+				<a href="#mobile-phone__collapse" class="mobile-phone visible-xs pull-right" data-toggle="collapse"></a>
 			</div>
 		</div>
-		<div class="header-bottom">
+		<div class="header-bottom hidden-sm hidden-xs">
 			<div class="container">
 				<nav class="nav">
 					<ul class="nav-list">
@@ -61,6 +113,10 @@
 					</ul>
 				</nav>
 			</div>
+		</div>
+		<div class="collapse mobile-phone__collapse" id="mobile-phone__collapse">
+			<a href=".feedback-pop-up" class="header-top__info-link" data-toggle="modal">Заказать звонок</a>
+			<a href="#" class="header-top__info-tel">+7 (4212) 45-66-99</a>
 		</div>
 	</header>
 
@@ -153,7 +209,7 @@
 		<section class="enroll-block">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6 col-sm-offset-1">
+					<div class="col-sm-8 col-md-6 col-md-offset-1">
 						<div class="enroll-block__title">
 							<p>
 								Не откладывайте заботу о своем здоровье. 
@@ -163,7 +219,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-sm-3 col-sm-offset-1 enroll-block__btn-container">
+					<div class="col-sm-4 col-md-3 col-md-offset-1 enroll-block__btn-container">
 						<a href=".enroll-pop-up" class="enroll-block__btn btn_default_white" data-toggle="modal">Записаться на прием</a>
 					</div>
 				</div>

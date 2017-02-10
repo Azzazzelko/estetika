@@ -27,13 +27,65 @@
 						<img src="../images/logo.svg" alt="img" class="img-responsive logo-img">
 					</div>
 				</a>
-				<div class="header-top__info pull-right text-right">
+				<div class="header-top__mobile-nav pull-right hidden_md hidden_lg dropdown">
+					<a href="#" class="header-top__nav-button" data-toggle="dropdown">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<div class="dropdown-menu mobile-nav__dropdown">
+						<a href="#" class="header-top__nav-button inner_button" data-toggle="dropdown">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</a> 
+						<ul class="mobile-nav-list">
+							<li class="mobile-nav-item">
+								<a href="#" class="mobile-nav-link">О Клинике</a>
+							</li>
+							<li class="mobile-nav-item">
+								<a href="#" class="mobile-nav-link">УСЛУГИ</a>
+							</li>
+							<li class="mobile-nav-item">
+								<a href="#" class="mobile-nav-link">Цены</a>
+							</li>
+							<li class="mobile-nav-item">
+								<a href="#" class="mobile-nav-link">ОТЗЫВЫ</a>
+							</li>
+							<li class="mobile-nav-item">
+								<a href="#" class="mobile-nav-link">Истории лечения</a>
+							</li>
+							<li class="mobile-nav-item">
+								<a href="#" class="mobile-nav-link">Врачи</a>
+							</li>
+							<li class="mobile-nav-item">
+								<a href="#" class="mobile-nav-link">Акции и скидки</a>
+							</li>
+							<li class="mobile-nav-item">
+								<a href="#" class="mobile-nav-link">Контакты</a>
+							</li>
+						</ul>
+						<ul class="mobile-nav-socials-list">
+							<li class="mobile-nav-socials-item">
+								<a href="#" class="mobile-nav-socials-link vk">vk</a>
+							</li>
+							<li class="mobile-nav-socials-item">
+								<a href="#" class="mobile-nav-socials-link fb">fb</a>
+							</li>
+							<li class="mobile-nav-socials-item">
+								<a href="#" class="mobile-nav-socials-link inst">inst</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-top__info pull-right text-right hidden-xs">
 					<a href=".feedback-pop-up" class="header-top__info-link" data-toggle="modal">Заказать звонок</a>
 					<a href="#" class="header-top__info-tel">+7 (4212) 45-66-99</a>
 				</div>
+				<a href="#mobile-phone__collapse" class="mobile-phone visible-xs pull-right" data-toggle="collapse"></a>
 			</div>
 		</div>
-		<div class="header-bottom">
+		<div class="header-bottom hidden-sm hidden-xs">
 			<div class="container">
 				<nav class="nav">
 					<ul class="nav-list">
@@ -62,10 +114,14 @@
 				</nav>
 			</div>
 		</div>
+		<div class="collapse mobile-phone__collapse" id="mobile-phone__collapse">
+			<a href=".feedback-pop-up" class="header-top__info-link" data-toggle="modal">Заказать звонок</a>
+			<a href="#" class="header-top__info-tel">+7 (4212) 45-66-99</a>
+		</div>
 	</header>
 
 	<main class="main">
-		<section class="breadcrumbs-block">
+		<section class="breadcrumbs-block article-breadcrumbs">
 			<div class="container">
 				<ul class="breadcrumbs-list">
 					<li class="breadcrumbs-item">
@@ -86,6 +142,11 @@
 
 		<section class="article-page">
 			<div class="article-page-section">
+				
+				<div class="article-page-top__img-container img-container">
+					<img src="../images/article_img-2.png" alt="img" class="article-page-top__img img-responsive">
+				</div>
+
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-10 col-sm-offset-1">
@@ -145,7 +206,7 @@
 								<h3 class="article-page__h3-title">
 									Подойдут ли мне сапфировые брекеты?
 								</h3>
-								<p class="article-page__h2-description">
+								<p class="article-page__h2-description article-page__h2-description_margin">
 									Показания к установке <b class="article-page__h2-description_green">сапфровой брекет-системы</b> следующие:
 								</p>
 								<ul class="article-page__caniuse-list">
@@ -189,7 +250,7 @@
 				</div>
 			</div>
 
-			<div class="article-page-section">
+			<div class="article-page-section article-page-section_form">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-8 col-sm-offset-2">
@@ -278,9 +339,10 @@
 
 							<article class="article-page-block">
 								<h3 class="article-page__h3-title text-center">
-									Сколько стоят сапфировые брекеты?
+									<p>Хотите подробнее узнать о наших ценах на сапфировые брекеты?</p> 
+									<p>Заполните заявку!</p>
 								</h3>
-								<a href="#" class="aricle-page__submit btn_default">ОТПРАВИТЬ ЗАЯВКУ</a>
+								<a href=".healing-cost-pop-up" data-toggle="modal" class="aricle-page__submit btn_default">ОТПРАВИТЬ ЗАЯВКУ</a>
 							</article>
 						</div>
 					</div>
@@ -296,7 +358,7 @@
 						<li class="article-page__interesting-item col-sm-3">
 							<a href="#" class="article-page__interestion-link">
 								<div class="article-page__interestin-img-container img-container">
-									<img src="../images/article_img-3.png" alt="img" class="article-page__interesting-img">
+									<img src="../images/article_img-3.png" alt="img" class="article-page__interesting-img img-responsive">
 								</div>
 								<div class="article-page__interestion-description">
 									Cапфировые брекеты – красиво, надежно, эффективно
@@ -306,7 +368,7 @@
 						<li class="article-page__interesting-item col-sm-3">
 							<a href="#" class="article-page__interestion-link">
 								<div class="article-page__interestin-img-container img-container">
-									<img src="../images/article_img-4.png" alt="img" class="article-page__interesting-img">
+									<img src="../images/article_img-4.png" alt="img" class="article-page__interesting-img img-responsive">
 								</div>
 								<div class="article-page__interestion-description">
 									Имплантация зубов в хабаровске – где делают и сколько стоит?
@@ -316,7 +378,7 @@
 						<li class="article-page__interesting-item col-sm-3">
 							<a href="#" class="article-page__interestion-link">
 								<div class="article-page__interestin-img-container img-container">
-									<img src="../images/article_img-5.png" alt="img" class="article-page__interesting-img">
+									<img src="../images/article_img-5.png" alt="img" class="article-page__interesting-img img-responsive">
 								</div>
 								<div class="article-page__interestion-description">
 									Керамические коронки – эстетика, прочность и деликатная устанвка
@@ -326,7 +388,7 @@
 						<li class="article-page__interesting-item col-sm-3">
 							<a href="#" class="article-page__interestion-link">
 								<div class="article-page__interestin-img-container img-container">
-									<img src="../images/article_img-10.png" alt="img" class="article-page__interesting-img">
+									<img src="../images/article_img-10.png" alt="img" class="article-page__interesting-img img-responsive">
 								</div>
 								<div class="article-page__interestion-description">
 									Лечение зубов под микроскопом в хабаровске
@@ -337,7 +399,7 @@
 				</div>
 			</div>
 
-			<div class="article-page-section">
+			<div class="article-page-section article-page-section_comments">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-10 col-sm-offset-1">
@@ -351,7 +413,7 @@
 							<ul class="article-page__consult-list">
 								<li class="article-page__consult-item consult-item_question">
 									<div class="article-page__consult-item-img-container img-container">
-										
+										<span class="article-page__consult-item-no-image-text">M</span>
 									</div>
 									<div class="article-page__consult-item-block">
 										<div class="article-page__consult-item-name">
@@ -364,6 +426,7 @@
 								</li>
 								<li class="article-page__consult-item consult-item_respond">
 									<div class="article-page__consult-item-img-container img-container">
+										<span class="article-page__consult-item-no-image-text">M</span>
 										<img src="../images/article__ava.png" alt="img" class="article-page__consult-item-img img-responsive">
 									</div>
 									<div class="article-page__consult-item-block">
@@ -377,7 +440,7 @@
 								</li>
 								<li class="article-page__consult-item consult-item_question">
 									<div class="article-page__consult-item-img-container img-container">
-										
+										<span class="article-page__consult-item-no-image-text">M</span>
 									</div>
 									<div class="article-page__consult-item-block">
 										<div class="article-page__consult-item-name">
@@ -390,6 +453,7 @@
 								</li>
 								<li class="article-page__consult-item consult-item_respond">
 									<div class="article-page__consult-item-img-container img-container">
+										<span class="article-page__consult-item-no-image-text">M</span>
 										<img src="../images/article__ava.png" alt="img" class="article-page__consult-item-img img-responsive">
 									</div>
 									<div class="article-page__consult-item-block">
@@ -406,6 +470,38 @@
 								Показать больше вопросов (12)
 								<i class="article-page__btn-more_chevron"></i>
 							</a>
+
+							<div class="article-page-section_comments-form-container">
+								<div class="comments-form__title">ЗАДАЙТЕ ВОПРОС</div>
+								<div class="row">
+									<div class="col-sm-10 col-sm-offset-1">
+										<form action="#" class="comments-form__form">
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="form-group-material">
+														<label class="material-label" for="comments-form__name">ФИО</label>
+														<input class="material-field" id="comments-form__name" type="text" name="name">
+														<small class="error">Обязательное поле!</small>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="form-group-material">
+														<label class="material-label" for="comments-form__tel">Телефон</label>
+														<input class="material-field" id="comments-form__tel" type="text" name="tel">
+														<small class="error">Обязательное поле!</small>
+													</div>
+												</div>
+											</div>
+											<div class="form-group-material form-group-material_textarea">
+												<label class="material-label" for="comments-form__problem">Ваша проблема</label>
+												<textarea class="material-field textarea_default" id="comments-form__problem" type="text" name="problem"></textarea>
+												<small class="error">Обязательное поле!</small>
+											</div>
+											<button type="submit" class="btn_default_trans feedback-pop__btn-submit">отправить</button>
+										</form>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -415,7 +511,7 @@
 		<section class="enroll-block">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6 col-sm-offset-1">
+					<div class="col-sm-8 col-md-6 col-md-offset-1">
 						<div class="enroll-block__title">
 							<p>
 								Не откладывайте заботу о своем здоровье. 
@@ -425,7 +521,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-sm-3 col-sm-offset-1 enroll-block__btn-container">
+					<div class="col-sm-4 col-md-3 col-md-offset-1 enroll-block__btn-container">
 						<a href=".enroll-pop-up" class="enroll-block__btn btn_default_white" data-toggle="modal">Записаться на прием</a>
 					</div>
 				</div>
@@ -478,6 +574,81 @@
 						<div class="form-group-material">
 							<label class="material-label" for="enroll-pop-up__how">Как вы узнали о нас?</label>
 							<input class="material-field" id="enroll-pop-up__how" name="how" type="text"></input>
+							<small class="error">Обязательное поле!</small>
+						</div>
+						<button type="submit" class="btn_default_trans feedback-pop__btn-submit">отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade price-pop-up">
+			<div class="feedback-pop-up__dialog">
+				<div class="feedback-pop__container">
+					<a href="#" class="feedback-pop__close-button" data-dismiss="modal"></a>
+					<div class="feedback-pop__title">Узнать стоимость</div>
+					<form action="#" class="feedback-pop__form">
+						<div class="form-group-material">
+							<label class="material-label" for="price-pop-up__name">Имя</label>
+							<input class="material-field" id="price-pop-up__name" type="text" name="name">
+							<small class="error">Обязательное поле!</small>
+						</div>
+						<div class="form-group-material">
+							<label class="material-label" for="price-pop-up__tel">Телефон*</label>
+							<input class="material-field" id="price-pop-up__tel" type="text" name="tel">
+							<small class="error">Обязательное поле!</small>
+						</div>
+						<div class="form-group-material">
+							<label class="material-label" for="price-pop-up__how">Как вы узнали о нас?</label>
+							<input class="material-field" id="price-pop-up__how" type="text" name="how">
+							<small class="error">Обязательное поле!</small>
+						</div>
+						<button type="submit" class="btn_default_trans feedback-pop__btn-submit">отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade healing-cost-pop-up">
+			<div class="feedback-pop-up__dialog">
+				<div class="feedback-pop__container">
+					<a href="#" class="feedback-pop__close-button" data-dismiss="modal"></a>
+					<div class="feedback-pop__title">Узнать цену лечения</div>
+					<form action="#" class="feedback-pop__form">
+						<div class="row form-group-material_row">
+							<div class="col-sm-7">
+								<div class="form-group-material">
+									<label class="material-label" for="healing-cost-pop-up__name">Имя</label>
+									<input class="material-field" id="healing-cost-pop-up__name" type="text" name="name">
+									<small class="error">Обязательное поле!</small>
+								</div>
+							</div>
+							<div class="col-sm-5">
+								<div class="form-group-material">
+									<label class="material-label" for="healing-cost-pop-up__age">Возраст</label>
+									<input class="material-field" id="healing-cost-pop-up__age" type="text" name="age">
+									<small class="error">Обязательное поле!</small>
+								</div>
+							</div>
+						</div>
+						<div class="form-group-material">
+							<label class="material-label" for="healing-cost-pop-up__tel">Телефон*</label>
+							<input class="material-field" id="healing-cost-pop-up__tel" type="text" name="tel">
+							<small class="error">Обязательное поле!</small>
+						</div>
+						<div class="form-group-material">
+							<label class="material-label" for="healing-cost-pop-up__e-mail">E-mail*</label>
+							<input class="material-field" id="healing-cost-pop-up__e-mail" type="text" name="e-mail">
+							<small class="error">Обязательное поле!</small>
+						</div>
+						<div class="form-group-material">
+							<label class="material-label" for="healing-cost-pop-up__how">Как вы о нас узнали?</label>
+							<input class="material-field" id="healing-cost-pop-up__how" type="text" name="how">
+							<small class="error">Обязательное поле!</small>
+						</div>
+						<div class="form-group-material">
+							<label class="material-label" for="healing-cost-pop-up__problem">Опишите вашу проблему</label>
+							<input class="material-field" id="healing-cost-pop-up__problem" type="text" name="problem">
 							<small class="error">Обязательное поле!</small>
 						</div>
 						<button type="submit" class="btn_default_trans feedback-pop__btn-submit">отправить</button>

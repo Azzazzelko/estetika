@@ -23,6 +23,14 @@
 
 /* xs+sm */
 @media screen and (max-width: 991px) {
+	.header-top__info {
+		padding: 5px 0;
+	}
+
+	.logo-img-container {
+		width: 140px;
+	}
+
 	.gallery-pop-up__close-button {
 		right: 0;
 	}
@@ -32,7 +40,7 @@
 	}
 
 	.header-top__mobile-nav {
-		padding: 25px 0;
+		padding: 13px 0;
 		margin-left: 57px;
 	}
 
@@ -289,6 +297,11 @@
 
 	.mobile-nav__dropdown {
 		top: -28px;
+		padding-top: 60px;
+	}
+
+	.header-top__nav-button.inner_button {
+		top: 32px;
 	}
 
 	.header-top__nav-button.inner_button .icon-bar:nth-of-type(1) {
@@ -300,6 +313,8 @@
 	}
 
 	.mobile-phone__collapse {
+		position: absolute;
+		width: 100%;
 		clear: both;
 		text-align: center;
 

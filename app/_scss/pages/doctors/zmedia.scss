@@ -1,0 +1,162 @@
+/* xs+sm+md */
+@media screen and (max-width: 1199px) {
+
+}
+
+/* xs+sm */
+@media screen and (max-width: 991px) {
+	.header {
+
+		.container {
+			border-bottom: 1px solid #d8d8d8;
+			padding-bottom: 5px;
+		}
+
+		.header-top__nav-button .icon-bar {
+			background: #33b4b0; 
+		}
+	}
+
+	.breadcrumbs-block {
+		padding-top: 50px;
+		margin-bottom: 20px;
+	}
+
+	.all-doctors-block__title {
+		margin-bottom: 60px;
+	}
+
+	.all-doctors-block__name {
+		font-size: 29px;
+		color: black;
+	}
+
+	.all-doctors-block__prof {
+		color: #33b4b0;
+	}
+
+	.ability-item__description {
+		font-size: 16px;
+	}
+
+	.all-doctors-block__ability-list {
+		height: 140px;
+		margin-bottom: 10px;
+	}
+
+	.enroll-block__btn-container {
+		padding: 5px 15px;
+		text-align: right;
+	}
+
+	.enroll-block__btn, .enroll-block__btn:hover, .enroll-block__btn:focus {
+		display: inline-block;
+	}
+}
+
+/* sm */
+@media screen and (max-width: 767px) {
+	.header {
+		position: relative;
+
+		.mobile-phone {
+			border: 1px solid #D5D5D5;
+			border-radius: 50%;
+		}
+
+		.mobile-nav__dropdown {
+			top: -32px;
+		}
+
+		.mobile-phone__collapse {
+			position: absolute;
+			width: 100%;
+			background: #fff;
+			z-index: 10;
+		}
+
+		.mobile-phone__collapse .header-top__info-link {
+			margin-top: 30px;
+		}
+
+		.mobile-phone__collapse .header-top__info-tel {
+			margin-bottom: 30px;
+		}
+	}
+
+	.breadcrumbs-block {
+		padding-top: 20px;
+		margin-bottom: 15px;
+	}
+
+	.all-doctors-block__title {
+		font-size: 28px;
+		margin-bottom: 25px;
+	}
+
+	.all-doctors-block__img-container {
+		border-bottom: 1px solid #d8d8d8;
+		margin: 0 -15px 23px -15px;
+		max-width: 120%;
+	}
+
+	.all-doctors-block__img {
+		width: 60%;
+	}
+
+	.all-doctors-block_right {
+		padding-left: 15px;
+	}
+
+	.all-doctors-block__name {
+		font-size: 20px;
+	}
+
+	.all-doctors-block__prof {
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
+
+	.ability-item__title {
+		font-size: 14px;
+	}
+
+	.ability-item__description {
+		font-size: 14px;
+	}
+
+	.all-doctors-block__ability-list {
+		height: 170px;
+		margin-bottom: 5px;
+	}
+
+	.all-doctors-block__about-btn,
+	.all-doctors-block__about-btn:hover,
+	.all-doctors-block__about-btn:focus {
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	.all-doctors-block__item {
+		border: none;
+		margin-bottom: 75px;
+	}
+
+	.enroll-block__title {
+		margin-bottom: 35px;
+	}
+
+	.enroll-block {
+		padding: 30px 0;
+	}
+
+	.enroll-block__btn, .enroll-block__btn:hover, .enroll-block__btn:focus {
+		width: 100% !important;
+		max-width: 288px;
+		margin: 0 auto;
+	}
+
+	.enroll-block__btn-container {
+		text-align: center;
+	}
+}

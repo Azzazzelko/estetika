@@ -1,0 +1,48 @@
+/* xs+sm+md */
+@media screen and (max-width: 1199px) {
+	
+}
+
+/* xs+sm */
+@media screen and (max-width: 991px) {
+	.prices-page__item-item-name {
+		font-size: 14px;
+	}
+
+	.prices-page__item-item-price {
+		width: 100px;
+	}
+
+	.prices-page__item-item {
+		display: flex;
+		justify-content: space-between;
+
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+}
+
+/* sm */
+@media screen and (max-width: 767px) {
+	.prices-page__title {
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+
+	.prices-page__item-item-price {
+		flex: 0 0 55px;
+		margin-left: 15px;
+	}
+
+	.prices-page__item-title {
+		line-height: 24px;
+		margin-bottom: 10px;
+		padding-right: 55px;
+	}
+
+	.prices-page {
+		padding-bottom: 40px;
+	}
+}
