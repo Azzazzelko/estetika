@@ -41,11 +41,12 @@
 }
 
 .article-page-top__img-container {
-	max-height: 440px;
+	height: 440px;
 	overflow: hidden;
 	position: absolute;
 	width: 100%;
 	top: -155px;
+	max-width: initial;
 
 	&:before {
 		content: "";
@@ -59,7 +60,8 @@
 }
 
 .article-page-top__img {
-	width: 100%;
+	width: auto;
+	height: 100%;
 }
 
 .article-page__description {

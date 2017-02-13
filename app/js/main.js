@@ -42,12 +42,24 @@ $(function() {
 	/**** article-slider ***/
 
 	$('.owl-article-slider').owlCarousel({
-		stagePadding: 500,
 		loop:true,
 		margin:30,
 		nav:true,
 		items: 2,
-		dots:false
+		dots:false,
+		responsive:{
+			0:{
+				stagePadding: 0,
+				items:1
+			},
+			768:{
+				stagePadding: 0,
+				items:2
+			},
+			992:{
+				stagePadding: 500
+			}
+		}
 	})
 
 	/***** forms ****/

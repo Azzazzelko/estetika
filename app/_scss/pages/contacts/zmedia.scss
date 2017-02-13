@@ -5,10 +5,42 @@
 
 /* xs+sm */
 @media screen and (max-width: 991px) {
-
+	.contacts-feed-block {
+		padding-top: 70px;
+	}
 }
 
 /* sm */
 @media screen and (max-width: 767px) {
+	.contacts-page {
+		.doctor-block__title {
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
 
+		.doctor-ability-item__item {
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.doctor-ability-item__description {
+			font-size: 17px;
+		}
+	}
+
+	.contacts-page__img-container {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		height: 400px;
+	}
+
+	.contacts-page .contacts-page__socials-list {
+		text-align: left;
+	}
 }
