@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>5AAC27DD-31E8-40D3-8373-365C72BD3900</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="50" height="50" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Estetica---Home---Desktop" transform="translate(-695.000000, -720.000000)">
+            <g id="1.-Home">
+                <g id="scroll-btn" transform="translate(720.000000, 745.000000) rotate(-360.000000) translate(-720.000000, -745.000000) translate(695.000000, 720.000000)">
+                    <use id="Oval-4" stroke-opacity="0.5" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                    <polygon id="" fill="#FFFFFF" points="24.443787 17 26.556213 17 26.556213 29.8757396 32.4911243 23.9911243 34 25.5 25.5 34 17 25.5 18.5088757 23.9911243 24.443787 29.8757396"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

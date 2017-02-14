@@ -83,6 +83,7 @@ $(function() {
 	**  validation   **
 	******************/
 
+
 	var validation = (function(){
 
 		var inputs = $("form").find('input, textarea'); //инпуты в формах
@@ -94,7 +95,7 @@ $(function() {
 		var setUpListeners = function(){
 			inputs.on('keydown', function(e){ 	        //удаляем ошибки при нажатии клавишь на поле ввода
 				var $this = $(this);
-				$this.removeClass('input_error');
+				$this.parent().removeClass('error');
 			});
 
 			$("form").on("submit", function(e){
@@ -119,13 +120,12 @@ $(function() {
 
 						if (validateEmail(thisVal)) {
 
-							$this.removeClass('input_error');
+							$this.parent().removeClass('error');
 							return isValid = true;
 
 						} else {
 
-							$this.addClass('input_error');
-							showErrors($this);
+							$this.parent().addClass('error');
 							return isValid = false;
 						}
 
@@ -133,13 +133,12 @@ $(function() {
 
 					if (!thisVal.trim()) {
 
-						$this.addClass('input_error');
-						showErrors($this);
+						$this.parent().addClass('error');
 						return isValid = false;
 
 					} else {
 
-						$this.removeClass('input_error');
+						$this.parent().removeClass('error');
 						return isValid = true;
 
 					}	
@@ -154,28 +153,6 @@ $(function() {
 		function validateEmail(email){
 			var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
 			return re.test(email);
-		};
-
-		function showErrors(elem){
-			elem.qtip({ 
-				content: {
-					text: 'Нужно заполнить все поля' 
-				},
-				position: {
-					my: 'left center', 
-					at: 'right center',
-					adjust: {
-						x: 40
-					}
-				}, 
-				show: {
-					ready: true,
-					event: false
-				},
-				hide: {
-					event: 'focus'
-				}
-			})
 		};
 
 		return {

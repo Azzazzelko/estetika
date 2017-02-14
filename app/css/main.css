@@ -1798,20 +1798,11 @@ input.material-field:focus, textarea.material-field:focus {
   opacity: 0.6;
 }
 
-.header-top__info-tel,
-.header-top__info-tel:hover,
-.header-top__info-tel:focus {
+.header-top__info-tel {
   text-align: right;
   color: #ffffff;
   font-size: 24px;
-  transition: all .3s ease-in-out;
-  opacity: 1;
   font-family: 'BlissPro-ExtraBold';
-}
-.header-top__info-tel:hover,
-.header-top__info-tel:hover:hover,
-.header-top__info-tel:focus:hover {
-  opacity: 0.6;
 }
 
 .nav-list {
@@ -1825,12 +1816,8 @@ input.material-field:focus, textarea.material-field:focus {
   font-family: 'BlissPro-ExtraBold';
   color: #fff;
   text-transform: uppercase;
-  transition: all .3s ease-in-out;
-  opacity: 1;
+  transition: all .3s;
   border-bottom: 2px solid transparent;
-}
-.nav-item:hover {
-  opacity: 0.6;
 }
 .nav-item:hover, .nav-item.active {
   border-bottom: 2px solid #fff;
@@ -1886,11 +1873,10 @@ input.material-field:focus, textarea.material-field:focus {
 
 .cabinets-block__description {
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.55;
   text-align: left;
   color: #ffffff;
   margin-bottom: 50px;
-  font-family: 'BlissPro-Medium';
 }
 
 .cabinet-block__list {
@@ -1987,8 +1973,8 @@ input.material-field:focus, textarea.material-field:focus {
 
 .doctors-block__description {
   font-family: 'BlissPro-Regular';
-  font-size: 14px;
-  line-height: 1.43;
+  font-size: 16px;
+  line-height: 1.5;
   color: #9b9b9b;
   margin-bottom: 40px;
 }
@@ -2177,7 +2163,7 @@ input.material-field:focus, textarea.material-field:focus {
 
 .owl-main-slider .owl-prev {
   transform: translateY(-50%) rotate(45deg);
-  left: -130px;
+  left: -80px;
   transition: all .3s ease-in-out;
   opacity: 1;
 }
@@ -2187,7 +2173,7 @@ input.material-field:focus, textarea.material-field:focus {
 
 .owl-main-slider .owl-next {
   transform: translateY(-50%) rotate(-135deg);
-  right: -130px;
+  right: -80px;
   transition: all .3s ease-in-out;
   opacity: 1;
 }

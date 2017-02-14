@@ -118,13 +118,10 @@
 	@include linksHover();
 }
 
-.header-top__info-tel,
-.header-top__info-tel:hover,
-.header-top__info-tel:focus {
+.header-top__info-tel {
 	text-align: right;
 	color: #ffffff;
 	font-size: 24px;
-	@include linksHover();
 	@include font(ext);
 }
 
@@ -139,7 +136,7 @@
 	@include font(ext);
 	color: #fff;
 	text-transform: uppercase;
-	@include linksHover();
+	transition: all .3s;
 	border-bottom: 2px solid transparent;
 
 	&:hover,
@@ -196,11 +193,10 @@
 
 .cabinets-block__description {
 	font-size: 16px;
-	line-height: 1.25;
+	line-height: 1.55;
 	text-align: left;
 	color: #ffffff;
 	margin-bottom: 50px;
-	@include font(med);
 }
 
 .cabinet-block__list {
@@ -305,8 +301,8 @@
 
 .doctors-block__description {
 	@include font(reg);
-	font-size: 14px;
-	line-height: 1.43;
+	font-size: 16px;
+	line-height: 1.5;
 	color: #9b9b9b;
 	margin-bottom: 40px;
 }
@@ -504,13 +500,13 @@
 
 .owl-main-slider .owl-prev {
 	transform: translateY(-50%) rotate(45deg);
-	left: -130px;
+	left: -80px;
 	@include linksHover();
 }
 
 .owl-main-slider .owl-next {
 	transform: translateY(-50%) rotate(-135deg);
-	right: -130px;
+	right: -80px;
 	@include linksHover();
 }
 
